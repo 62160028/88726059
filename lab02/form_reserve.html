@@ -6,9 +6,10 @@
  <title>Hotel booking</title>
 </head>
 <body>
- <h3>Form Demo</h3>
+ <h3>Hotel Booking</h3>
  <form method="POST" action="https://angsila.cs.buu.ac.th/~wittawas/632/88726059/lab02/afile.php">
 
+    <table>
     <tr>
         <td><label for ="roomtype">room type</label></td>
         <td><select name ="roomtype">
@@ -29,5 +30,42 @@
         </select>
     </tr>
     <tr> 
-        <td></td>  
+        <td><label for="fame">name</label></td>
+        <td><input type="text" name="fame" placeholder="First"></td>
+        <td><input type ="text" name ="lname" placeholder="Last"></td>
+    </tr>
+    <tr> 
+        <td><label for="email">Email</label></td>
+        <td><input type="email" name="email" placeholder="jon@company.com">
+        
+    </tr>
+    <tr> 
+        <td><label >Arrival</label></td>
+        <td><input type="date" name="arrivaldate"></td>
+        <td><input type ="time" name ="arrivaltime"></td>
+    </tr>
+    <tr> 
+        <td><label >Departure</label></td>
+        <td><input type="date" name="departuredate"></td>
+        <td><input type ="time" name ="departuretime"></td>
+    </tr>
+    <tr> 
+        <td><label >Free Pickup</label></td>
+        <td><input type="checkbox" name="pickup" volue ="Yes">Yes Sure<br>
+            <input type ="checkbox" name ="pickup"volue ="No">No,I already rented a cal</td>
+        
+    </tr>
+    <tr> 
+        <td><label >Flight Number</label></td>
+        <td><input type="text" name="flightNum"placeholder ="C1209"><td>
+              
+    </tr>
+    <tr> 
+        <td><label >Other requests</label></td>
+        <td><Textarea name="commmet" id="comment" rows="5" cols="50"></Textarea></td>           
+    </tr>
+    <tr>
+        <td colspan="3" align="center"><input type="submit" value="Complete Reservation"></td>
+    </tr>
+        </table>
     
