@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Hotel booking</title>
+</head>
+<body>
+ <h3>Hotel Booking</h3>
+ <form method="POST" action="https://angsila.cs.buu.ac.th/~wittawas/632/88726059/lab02/afile.php">
+
+    <table>
+    <tr>
+        <td><label for ="roomtype">room type</label></td>
+        <td><select name ="roomtype">
+            <option value="0">Plese Select</option>
+            <option value="1">Standard</option>
+            <option value="2">Luxury</option>
+            <option value="3">Deluxe</option></td>
+        </select>
+    </tr>
+
+    <tr><td><label for="numguest">Number of Guests</label></td>
+        <td><select name="numguest">
+            <option value="0">1-2</option>
+            <option value="1">3-4</option>
+            <option value="2">5-6</option>
+            <option value="3">7-8</option>
+        </td>
+        </select>
+    </tr>
+    <tr> 
+        <td><label for="fame">name</label></td>
+        <td><input type="text" name="fame" placeholder="First"></td>
+        <td><input type ="text" name ="lname" placeholder="Last"></td>
+    </tr>
+    <tr> 
+        <td><label for="email">Email</label></td>
+        <td><input type="email" name="email" placeholder="jon@company.com">
+        
+    </tr>
+    <tr> 
+        <td><label >Arrival</label></td>
+        <td><input type="date" name="arrivaldate"></td>
+        <td><input type ="time" name ="arrivaltime"></td>
+    </tr>
+    <tr> 
+        <td><label >Departure</label></td>
+        <td><input type="date" name="departuredate"></td>
+        <td><input type ="time" name ="departuretime"></td>
+    </tr>
+    <tr> 
+        <td><label >Free Pickup</label></td>
+        <td><input type="checkbox" name="pickup" volue ="Yes">Yes Sure<br>
+            <input type ="checkbox" name ="pickup"volue ="No">No,I already rented a cal</td>
+        
+    </tr>
+    <tr> 
+        <td><label >Flight Number</label></td>
+        <td><input type="text" name="flightNum"placeholder ="C1209"><td>
+              
+    </tr>
+    <tr> 
+        <td><label >Other requests</label></td>
+        <td><Textarea name="commmet" id="comment" rows="5" cols="50"></Textarea></td>           
+    </tr>
+    <tr>
+        <td colspan="3" align="center"><input type="submit" value="Complete Reservation"></td>
+    </tr>
+        </table>
+    
