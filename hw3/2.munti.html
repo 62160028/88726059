@@ -1,0 +1,37 @@
+<html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>โปรแกรมแสดงแม่สูตรคูณ </title>
+   
+   <script language="JavaScript">
+    function show(num){
+
+    num = document.getElementById("num").value;
+    div = document.getElementById("divShow");
+    div.innerHTML = "";
+    table = ``
+    for(var i = 1; i<=12; i++){  
+      table += `<tr>
+                         <td>${num}x${i }</td>
+                         <td>${num*i}</td>
+                </tr>`
+   }
+   divShow.innerHTML = table
+
+
+
+ }
+ </script>
+ 
+ </head>
+ <body>
+       <input type="integer" id = "num">
+       <button onclick="show();">คำนวณ</button>
+       <table border="2">
+         <tbody id="divShow"></tbody>
+
+       </table>
+       
+ </body>
+</html>

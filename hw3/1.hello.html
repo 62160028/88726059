@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+    <script>
+        function input(n){
+            div = document.getElementById('name');
+            div.innerHTML = "";
+            div.innerHTML += "Hello "+n+" ";
+        }
+    </script>
+</head>
+<body>
+    <b>1.โปรแกรมทักทาย hello.html</b>
+    <br>
+    <br>
+    <input type="text" onkeyup = "input(this.value);">
+    <div id="name"></div>
+
+</body>
+</html>
